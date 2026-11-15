@@ -209,7 +209,7 @@ footer b{font:600 13px Saira,sans-serif;letter-spacing:.22em;color:var(--ink)}
    <h2>Help us build the future of family memory</h2>
    <p class="muted">Join the LegacyAtlas research study and help shape how families save, share and pass down what matters.</p>
    <ul class="ticks" id="studyList"></ul>
-   <a class="btn" id="studyBtn" href="#study"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h9"/></svg></span><span>Sign up to take part<small>Takes about 2 minutes</small></span><span class="go">→</span></a>
+   <a class="btn" id="studyBtn" href="#study"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h9"/></svg></span><span>Take the survey<small>About 10 minutes</small></span><span class="go">→</span></a>
    <p class="note" id="studyNote">Study details shown are placeholders until the final study info is added.</p>
   </div>
  </section>
@@ -236,13 +236,14 @@ footer b{font:600 13px Saira,sans-serif;letter-spacing:.22em;color:var(--ink)}
 
  const SITE = {
   studySignup: "",                 // paste your Google Form / Typeform link, e.g. "https://forms.gle/xxxx"
-  studyIsFinal: false              // set to true once the study bullets below are real
+  studyIsFinal: true              // set to true once the study bullets below are real
  };
 
  const STUDY = [
-  "Who: parents, grandparents, and anyone who wants to protect their family's memories",
-  "What: a short survey and an optional conversation about how you keep memories today",
-  "Why: your answers shape how the Historian's Vault, Legacy and History work"
+  "Who: adults 18+, especially parents, grandparents and anyone who has lost a loved one",
+  "What: a 10-minute online survey about how your family keeps memories today",
+  "Bonus: 5 households will be chosen to test the Historian prototype at home for 4 weeks",
+  "Thank you: everyone who joins gets early access to the Historian"
  ];
 
  // BUILD VIDEOS & PHOTOS
@@ -254,22 +255,25 @@ footer b{font:600 13px Saira,sans-serif;letter-spacing:.22em;color:var(--ink)}
   // { type:"image", src:"prototype1.jpg", caption:"Prototype v1" },
  ];
 
- // [name, link, icon] — delete a line to hide a platform, add one to show another
+ // SOCIAL LINKS: [name, full link, what to show under the name, icon]
+ // A line with an empty link ("") is hidden until you paste the link in.
  const SOCIAL = [
-  ["Instagram", "https://www.instagram.com/" + HANDLE, "ig"],
-  ["TikTok",    "https://www.tiktok.com/@" + HANDLE,   "tt"],
-  ["Facebook",  "https://www.facebook.com/" + HANDLE,  "fb"]
+  ["Instagram", "https://www.instagram.com/legacyatlas.inc", "@legacyatlas.inc", "ig"],
+  ["TikTok",    "https://www.tiktok.com/@legacyatlas.inc",   "@legacyatlas.inc", "tt"],
+  ["X",         "https://x.com/Legacyatlasinc",               "@Legacyatlasinc",  "x"],
+  ["Facebook",  "https://www.facebook.com/share/1A1RFdtsJU/",  "LegacyAtlas",               "fb"],   // paste your Facebook Page link, e.g. "https://www.facebook.com/profile.php?id=123..."
+  ["Discord",   "https://discord.gg/EDqgKAJT8Z",  "Join the community",        "dc"]    // paste your server invite, e.g. "https://discord.gg/abc123"
  ];
 
  // Main buttons: [where it goes, title, subtitle, icon, highlighted?]
  const LINKS = [
-  ["study", "Join the research study",          "Help shape LegacyAtlas. Now recruiting",   "flask", true],
+  ["study", "Join the research study",          "10-minute survey + at-home prototype test",   "flask", true],
   ["#build","Watch the Historian being built",  "3D-printing timelapses and prototypes",    "play"],
   ["#about","What is LegacyAtlas?",             "Memories kept like heirlooms",             "globe"],
   ["#why",  "Why I built it",                   "The story behind the mission",             "heart"],
   ["#how",  "Meet the Historian (LAH)",         "The device and the Atlas AI team",         "chip"],
   ["#rooms","The Vault, Legacy & History",      "Three ways to keep your legacy",           "book"],
-  ["#follow","Follow & contact",                "@" + HANDLE + " on every platform",        "at"]
+  ["#follow","Follow & contact",                "Instagram, TikTok, X, Facebook & Discord",        "at"]
  ];
  /* ===================================================== */
 
@@ -285,6 +289,8 @@ footer b{font:600 13px Saira,sans-serif;letter-spacing:.22em;color:var(--ink)}
   printer:'<path d="M5 20h14M7 20V9h10v11M9 9V4h6v5"/><path d="M12 13v3"/>',
   ig:'<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>',
   tt:'<path d="M14 3v11.5a3.5 3.5 0 11-3.5-3.5"/><path d="M14 3c.5 3 2.5 5 5.5 5.2"/>',
+  x:'<path d="M4 4l16 16M20 4L4 20"/>',
+  dc:'<path d="M7 7c3-1.3 7-1.3 10 0l2 9c-2 1.5-4 2-4 2l-1-2M10 16l-1 2s-2-.5-4-2l2-9"/><circle cx="9.5" cy="12" r="1"/><circle cx="14.5" cy="12" r="1"/>',
   fb:'<path d="M15 3h-2.5A3.5 3.5 0 009 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 011-1H15z"/>'
  };
  const ext = h => /^https?:/i.test(h);
@@ -313,8 +319,8 @@ footer b{font:600 13px Saira,sans-serif;letter-spacing:.22em;color:var(--ink)}
  sb.href = studyHref; if (ext(studyHref)) { sb.target = "_blank"; sb.rel = "noopener"; }
  if (SITE.studyIsFinal) $("studyNote").remove();
 
- $("social").innerHTML = SOCIAL.map(([n,u,ic]) =>
-  `<a href="${u}" target="_blank" rel="noopener">${svg(I[ic])}<span>${n}<small>@${HANDLE}</small></span></a>`).join("");
+ $("social").innerHTML = SOCIAL.filter(([,u]) => u).map(([n,u,sub,ic]) =>
+  `<a href="${u}" target="_blank" rel="noopener">${svg(I[ic])}<span>${n}<small>${sub}</small></span></a>`).join("");
  $("topHandle").textContent = "@" + HANDLE;
  $("mail").href = "mailto:" + EMAIL;
  $("mailText").textContent = EMAIL;
