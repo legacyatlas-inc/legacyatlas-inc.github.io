@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LegacyAtlas Links</title>
+<meta name="description" content="LegacyAtlas helps families keep their core memories like heirlooms, and pass them down for generations.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://legacyatlasinc.com/">
+<!-- Link previews (shows logo + text when the link is shared in DMs, texts, Facebook, etc.) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://legacyatlasinc.com/">
+<meta property="og:title" content="LegacyAtlas | Memories kept like heirlooms">
+<meta property="og:description" content="Your family's stories, voices and wisdom, kept safe and passed down for generations. Join our research study.">
+<meta property="og:image" content="https://legacyatlasinc.com/logo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: warm and hopeful, a family story told in the logo's voice
+   IDEA: the logo's night sky opens onto a bright, clean page, like a planet seen at dawn
+   PICTURE: the logo on its own black band at the top, then the build videos as the second picture
+   COLOUR and TYPE: black header, soft silver-white page, violet #7c4dff accent from the orbit ring; Saira + Instrument Sans
+   LAYOUT: one phone-width column — logo, tagline, link buttons, then sections each link jumps to */
+
+/* ===== BRAND COLOURS — change these to restyle the whole page ===== */
+:root{
+ color-scheme:light;
+ --bg:#f4f3f8;          /* page background (soft silver-white) */
+ --panel:#ffffff;       /* cards and buttons */
+ --line:#e2e0ea;        /* borders */
+ --ink:#17141d;         /* main text */
+ --soft:#5d5868;        /* secondary text */
+ --violet:#6c3ff0;      /* brand accent (the orbit) */
+ --violet2:#4f25c9;     /* deeper violet */
+ --tint:#efe9ff;        /* light violet wash */
+ --night:#000000;       /* header background (matches logo) */
+}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Instrument Sans",system-ui,sans-serif;overflow-x:clip}
+a{color:inherit}
+.wrap{max-width:580px;margin:0 auto}
+
+/* ---------- Header / logo ---------- */
+.cover{position:relative;padding:20px 18px 34px;text-align:center;color:#ecebf1;background:
+ radial-gradient(55% 45% at 50% 40%,rgba(124,77,255,.28),transparent 70%),
+ radial-gradient(1px 1px at 12% 20%,#fff9,transparent),radial-gradient(1px 1px at 82% 14%,#fff7,transparent),
+ radial-gradient(1px 1px at 70% 66%,#fff6,transparent),radial-gradient(1.5px 1.5px at 22% 76%,#fff7,transparent),
+ radial-gradient(1px 1px at 92% 84%,#fff5,transparent),var(--night);
+ border-radius:0 0 28px 28px}
+.logo{display:block;width:min(440px,92vw);height:auto;margin:0 auto;mix-blend-mode:screen;animation:rise .9s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
+.tag{margin:4px auto 0;max-width:32ch;font-size:18px;line-height:1.45;color:#f3f1f8}
+.handle{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:8px 16px;border-radius:99px;
+ background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);font:600 14px Saira,sans-serif;letter-spacing:.05em;color:#d9ccff;text-decoration:none}
+
+/* ---------- Link buttons ---------- */
+.links{display:grid;gap:12px;padding:24px 18px 8px}
+.btn{display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 16px;border-radius:16px;background:var(--panel);
+ border:1px solid var(--line);text-decoration:none;font-weight:600;box-shadow:0 1px 2px rgba(23,20,29,.05);
+ transition:transform .15s ease,border-color .15s,box-shadow .15s}
+.btn:hover{border-color:var(--violet);transform:translateY(-1px);box-shadow:0 10px 24px -14px rgba(108,63,240,.6)}
+.btn:focus-visible,summary:focus-visible,.social a:focus-visible,.mail:focus-visible{outline:3px solid var(--violet);outline-offset:2px}
+.btn small{display:block;font-weight:400;color:var(--soft);font-size:14px;line-height:1.35}
+.btn .ic{flex:none;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--tint);color:var(--violet)}
+.btn .ic svg{width:19px;height:19px}
+.btn .go{margin-left:auto;color:var(--violet);font-size:18px}
+.btn.main{background:linear-gradient(135deg,#7c4dff,var(--violet2));border-color:transparent;color:#fff;box-shadow:0 12px 26px -14px rgba(79,37,201,.8)}
+.btn.main small{color:#e8e0ff}.btn.main .go{color:#fff}.btn.main .ic{background:rgba(255,255,255,.18);color:#fff}
+
+/* ---------- Sections ---------- */
+section{padding:34px 18px 4px;scroll-margin-top:12px}
+.kick{display:block;color:var(--violet);font-weight:600;font-size:14px;margin-bottom:4px}
+h2{font:700 27px/1.12 Saira,sans-serif;margin:0 0 12px;letter-spacing:.01em;text-wrap:balance}
+p{margin:0 0 12px}
+.lead{font-size:17px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px}
+.card p:last-child{margin-bottom:0}
+.quote{margin:0 0 14px;padding:16px 18px;border-radius:14px;background:var(--tint);border-left:4px solid var(--violet);
+ font:500 19px/1.45 "Instrument Sans",sans-serif;color:#2a1d55}
+.ticks{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:8px}
+.ticks li{display:flex;gap:10px;align-items:flex-start}
+.ticks li::before{content:"";flex:none;width:8px;height:8px;margin-top:9px;border-radius:50%;background:var(--violet)}
+
+/* ---------- Build gallery ---------- */
+.media{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.tile{position:relative;margin:0;border-radius:16px;overflow:hidden;background:#0d0b12;aspect-ratio:9/16}
+.tile.wide{grid-column:1/-1;aspect-ratio:16/10}
+.tile video,.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 12px 10px;font-size:13px;font-weight:600;color:#fff;
+ background:linear-gradient(transparent,rgba(0,0,0,.75))}
+.tile.empty{display:grid;place-items:center;text-align:center;padding:16px;color:#cfc6ec;
+ background:radial-gradient(80% 60% at 50% 30%,rgba(124,77,255,.35),transparent 70%),#100c1a}
+.tile.empty svg{width:34px;height:34px;color:#a98bff;margin:0 auto 8px;display:block}
+.tile.empty b{display:block;color:#fff;font-size:15px}
+.tile.empty span{font-size:13px}
+
+/* ---------- Three rooms ---------- */
+.rooms{display:grid;gap:10px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:16px}
+details[open]{border-color:#cfc3fb;box-shadow:0 8px 20px -16px rgba(108,63,240,.6)}
+summary{cursor:pointer;list-style:none;padding:16px;display:flex;gap:12px;align-items:center;font-weight:600;min-height:60px}
+summary::-webkit-details-marker{display:none}
+summary .n{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;flex:none;font:700 15px Saira,sans-serif;background:var(--violet);color:#fff}
+summary small{display:block;font-weight:400;color:var(--soft);font-size:14px}
+summary .pl{margin-left:auto;color:var(--violet);font-size:24px;line-height:1;transition:transform .2s}
+details[open] summary .pl{transform:rotate(45deg)}
+details .body{padding:0 16px 14px 60px;color:var(--soft)}
+details .body p:last-child{margin:0}
+
+/* ---------- Research study ---------- */
+.study{border-radius:22px;padding:22px;color:#f1eefa;background:
+ radial-gradient(110% 80% at 100% 0%,rgba(124,77,255,.55),transparent 60%),#120d1f}
+.study h2{color:#fff}.study .muted{color:#cbc2e6}
+.pill{display:inline-block;background:#fff;color:var(--violet2);font-size:13px;font-weight:600;padding:3px 12px;border-radius:99px;margin-bottom:12px}
+.study .ticks li::before{background:#a98bff}
+.study .ticks{margin:6px 0 18px}
+.study .btn{background:#fff;color:#17141d;border-color:#fff}
+.study .btn small{color:#5d5868}
+.note{font-size:13px;color:var(--soft);margin-top:10px}
+.study .note{color:#a9a0c6}
+
+/* ---------- Social + contact ---------- */
+.social{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:10px}
+.social a{display:flex;align-items:center;gap:12px;min-height:58px;padding:10px 14px;border-radius:14px;border:1px solid var(--line);background:var(--panel);text-decoration:none;font-weight:600}
+.social a:hover{border-color:var(--violet)}
+.social svg{width:22px;height:22px;flex:none;color:var(--violet)}
+.social small{display:block;font-weight:400;color:var(--soft);font-size:13px}
+.mail{display:flex;align-items:center;gap:12px;margin-top:10px;min-height:58px;padding:10px 14px;border-radius:14px;background:var(--tint);border:1px solid #d9cdfd;text-decoration:none;font-weight:600}
+.mail svg{width:22px;height:22px;color:var(--violet);flex:none}
+.mail small{display:block;font-weight:400;color:var(--soft);font-size:13px;overflow-wrap:anywhere}
+.copy{margin-left:auto;flex:none;min-height:40px;padding:0 14px;border-radius:10px;border:1px solid #cdbffb;background:#fff;color:var(--violet2);font:600 14px "Instrument Sans",sans-serif;cursor:pointer}
+footer{text-align:center;color:var(--soft);font-size:13px;padding:34px 18px 46px}
+footer b{font:600 13px Saira,sans-serif;letter-spacing:.22em;color:var(--ink)}
+@media(max-width:600px){.social{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.logo{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="cover">
+ <div class="wrap">
+  <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">LegacyAtlas</h1>
+  <img class="logo" src="logo.jpg" alt="LegacyAtlas logo" width="720" height="546">
+  <p class="tag">Your family's stories, voices and wisdom, kept safe like an heirloom and passed down for generations.</p>
+  <a class="handle" id="topHandle" href="#follow">@legacyatlas.inc</a>
+ </div>
+</header>
+
+<main class="wrap">
+ <nav class="links" id="links" aria-label="Quick links"></nav>
+
+ <section id="build">
+  <span class="kick">Behind the scenes</span>
+  <h2>Watch the Historian come to life</h2>
+  <p class="lead">Every Historian starts as a spool of filament. Follow the build layer by layer, from first print to working prototype.</p>
+  <div class="media" id="media"></div>
+ </section>
+
+ <section id="about">
+  <span class="kick">The mission</span>
+  <h2>What is LegacyAtlas?</h2>
+  <div class="card">
+   <p class="lead">LegacyAtlas helps families around the world hold on to what matters most, and hand it down.</p>
+   <p>We keep the things that usually slip away: a grandparent's laugh on a voicemail, the advice you only got once, the business idea scribbled on a napkin, the late-night heart-to-heart. Gathered in one place, they become something your family can return to for generations.</p>
+   <ul class="ticks">
+    <li>Memories, ideas and advice</li>
+    <li>Projects, plans and life lessons</li>
+    <li>Heart-to-hearts and everyday guidance</li>
+   </ul>
+  </div>
+ </section>
+
+ <section id="why">
+  <span class="kick">The story</span>
+  <h2>Why I built LegacyAtlas</h2>
+  <div class="card">
+   <p class="quote">I lost my uncle unexpectedly, and with him went the glue that held my family together.</p>
+   <p>Afterward, I realized how few of his stories, sayings and lessons we had actually kept. They lived in people's heads, and people's heads forget.</p>
+   <p>LegacyAtlas is my answer. It treats core memories with the seriousness they deserve, the way a family protects an heirloom, so no one has to lose the glue again.</p>
+  </div>
+ </section>
+
+ <section id="how">
+  <span class="kick">How it works</span>
+  <h2>Meet the Historian</h2>
+  <div class="card">
+   <p class="lead">The Historian, or <strong>LAH</strong>, is a 3D-printed device designed to live in your home and hold your family's legacy.</p>
+   <p>Inside it runs an AI model powered by <strong>Atlas</strong>, a team of AI helpers working together to turn the stories you share into a legacy that's easy to explore and pass on.</p>
+  </div>
+ </section>
+
+ <section id="rooms">
+  <span class="kick">Inside the Historian</span>
+  <h2>Three ways to keep your legacy</h2>
+  <div class="rooms">
+   <details open><summary><span class="n">1</span><span>The Vault<small>Your family's virtual scrapbook</small></span><span class="pl">+</span></summary>
+    <div class="body"><p>Save voice messages, handwritten notes and photos in one safe place. Hear a loved one's voice again, years from now, exactly as it was.</p></div></details>
+   <details><summary><span class="n">2</span><span>The Legacy<small>Wisdom worth passing on</small></span><span class="pl">+</span></summary>
+    <div class="body"><p>A dedicated space for business plans, life advice and hard-won lessons, written for the people who come after you.</p></div></details>
+   <details><summary><span class="n">3</span><span>The History<small>A timelapse of every generation</small></span><span class="pl">+</span></summary>
+    <div class="body"><p>Grandparents grow older, friends move on, and kids forget the aunt or uncle who once changed their diapers. The History keeps a living record of each generation growing up, so those connections are never lost.</p></div></details>
+  </div>
+ </section>
+
+ <section id="study">
+  <div class="study">
+   <span class="pill">Now recruiting</span>
+   <h2>Help us build the future of family memory</h2>
+   <p class="muted">Join the LegacyAtlas research study and help shape how families save, share and pass down what matters.</p>
+   <ul class="ticks" id="studyList"></ul>
+   <a class="btn" id="studyBtn" href="#study"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h9"/></svg></span><span>Take the survey<small>About 10 minutes</small></span><span class="go">→</span></a>
+   <p class="note" id="studyNote">Study details shown are placeholders until the final study info is added.</p>
+  </div>
+ </section>
+
+ <section id="follow">
+  <span class="kick">Stay connected</span>
+  <h2>Follow the journey</h2>
+  <p>New build videos, prototype updates and family stories every week.</p>
+  <div class="social" id="social"></div>
+  <a class="mail" id="mail" href="#follow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+   <span>Email us<small id="mailText"></small></span><button class="copy" id="copy" type="button">Copy</button></a>
+ </section>
+</main>
+
+<footer><b>LEGACYATLAS</b><br>© <span id="yr"></span> · Memories are the heirloom.</footer>
+
+<script>
+{
+ /* =====================================================
+    EDIT YOUR CONTENT HERE — no other code needs to change
+    ===================================================== */
+ const HANDLE = "legacyatlas.inc";
+ const EMAIL  = "legacyatlas.inc@gmail.com";
+
+ const SITE = {
+  studySignup: "",                 // paste your Google Form / Typeform link, e.g. "https://forms.gle/xxxx"
+  studyIsFinal: true              // set to true once the study bullets below are real
+ };
+
+ const STUDY = [
+  "Who: adults 18+, especially parents, grandparents and anyone who has lost a loved one",
+  "What: a 10-minute online survey about how your family keeps memories today",
+  "Bonus: 5 households will be chosen to test the Historian prototype at home for 4 weeks",
+  "Thank you: everyone who joins gets early access to the Historian"
+ ];
+
+ // BUILD VIDEOS & PHOTOS
+ // Put your files in the same folder as this page, then list them here.
+ // type: "video" (mp4, plays silently on loop) or "image" (jpg/png). wide: true = full width.
+ // Example: { type:"video", src:"timelapse-shell.mp4", caption:"Printing the shell, 9 hours in 30 seconds" },
+ const MEDIA = [
+  // { type:"video", src:"timelapse1.mp4", caption:"Printing the Historian's shell", wide:true },
+  // { type:"image", src:"prototype1.jpg", caption:"Prototype v1" },
+ ];
+
+ // SOCIAL LINKS: [name, full link, what to show under the name, icon]
+ // A line with an empty link ("") is hidden until you paste the link in.
+ const SOCIAL = [
+  ["Instagram", "https://www.instagram.com/legacyatlas.inc", "@legacyatlas.inc", "ig"],
+  ["TikTok",    "https://www.tiktok.com/@legacyatlas.inc",   "@legacyatlas.inc", "tt"],
+  ["X",         "https://x.com/Legacyatlasinc",               "@Legacyatlasinc",  "x"],
+  ["Facebook",  "",  "LegacyAtlas",               "fb"],   // paste your Facebook Page link, e.g. "https://www.facebook.com/profile.php?id=123..."
+  ["Discord",   "",  "Join the community",        "dc"]    // paste your server invite, e.g. "https://discord.gg/abc123"
+ ];
+
+ // Main buttons: [where it goes, title, subtitle, icon, highlighted?]
+ const LINKS = [
+  ["study", "Join the research study",          "10-minute survey + at-home prototype test",   "flask", true],
+  ["#build","Watch the Historian being built",  "3D-printing timelapses and prototypes",    "play"],
+  ["#about","What is LegacyAtlas?",             "Memories kept like heirlooms",             "globe"],
+  ["#why",  "Why I built it",                   "The story behind the mission",             "heart"],
+  ["#how",  "Meet the Historian (LAH)",         "The device and the Atlas AI team",         "chip"],
+  ["#rooms","The Vault, Legacy & History",      "Three ways to keep your legacy",           "book"],
+  ["#follow","Follow & contact",                "Instagram, TikTok, X, Facebook & Discord",        "at"]
+ ];
+ /* ===================================================== */
+
+ const svg = p => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
+ const I = {
+  globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/>',
+  heart:'<path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/>',
+  chip:'<rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/>',
+  book:'<path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M4 19V5"/>',
+  flask:'<path d="M9 3h6M10 3v6l-5 9a2 2 0 002 3h10a2 2 0 002-3l-5-9V3"/>',
+  play:'<rect x="3" y="4" width="18" height="16" rx="3"/><path d="M10 9l5 3-5 3z"/>',
+  at:'<circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-4 8"/>',
+  printer:'<path d="M5 20h14M7 20V9h10v11M9 9V4h6v5"/><path d="M12 13v3"/>',
+  ig:'<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>',
+  tt:'<path d="M14 3v11.5a3.5 3.5 0 11-3.5-3.5"/><path d="M14 3c.5 3 2.5 5 5.5 5.2"/>',
+  x:'<path d="M4 4l16 16M20 4L4 20"/>',
+  dc:'<path d="M7 7c3-1.3 7-1.3 10 0l2 9c-2 1.5-4 2-4 2l-1-2M10 16l-1 2s-2-.5-4-2l2-9"/><circle cx="9.5" cy="12" r="1"/><circle cx="14.5" cy="12" r="1"/>',
+  fb:'<path d="M15 3h-2.5A3.5 3.5 0 009 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 011-1H15z"/>'
+ };
+ const ext = h => /^https?:/i.test(h);
+ const studyHref = SITE.studySignup || "#study";
+ const target = h => ext(h) ? ' target="_blank" rel="noopener"' : '';
+ const $ = id => document.getElementById(id);
+
+ $("links").innerHTML = LINKS.map(([h,t,s,ic,main]) => {
+  const href = h === "study" ? studyHref : h;
+  return `<a class="btn${main?' main':''}" href="${href}"${target(href)}>
+   <span class="ic">${svg(I[ic])}</span><span>${t}<small>${s}</small></span><span class="go">→</span></a>`;
+ }).join("");
+
+ // gallery: real files if listed, otherwise "coming soon" tiles
+ $("media").innerHTML = MEDIA.length
+  ? MEDIA.map(m => `<figure class="tile${m.wide?' wide':''}">${m.type==="video"
+      ? `<video src="${m.src}" autoplay muted loop playsinline preload="metadata"></video>`
+      : `<img src="${m.src}" alt="${m.caption||'LegacyAtlas build photo'}" loading="lazy">`}
+      ${m.caption?`<figcaption>${m.caption}</figcaption>`:''}</figure>`).join("")
+  : `<div class="tile wide empty"><div>${svg(I.printer)}<b>Build timelapses dropping soon</b><span>Follow @${HANDLE} to catch the first one</span></div></div>
+     <div class="tile empty"><div>${svg(I.play)}<b>First print</b><span>Coming soon</span></div></div>
+     <div class="tile empty"><div>${svg(I.chip)}<b>Prototype v1</b><span>Coming soon</span></div></div>`;
+
+ $("studyList").innerHTML = STUDY.map(x => `<li>${x}</li>`).join("");
+ const sb = $("studyBtn");
+ sb.href = studyHref; if (ext(studyHref)) { sb.target = "_blank"; sb.rel = "noopener"; }
+ if (SITE.studyIsFinal) $("studyNote").remove();
+
+ $("social").innerHTML = SOCIAL.filter(([,u]) => u).map(([n,u,sub,ic]) =>
+  `<a href="${u}" target="_blank" rel="noopener">${svg(I[ic])}<span>${n}<small>${sub}</small></span></a>`).join("");
+ $("topHandle").textContent = "@" + HANDLE;
+ $("mail").href = "mailto:" + EMAIL;
+ $("mailText").textContent = EMAIL;
+ $("copy").addEventListener("click", async e => {
+  e.preventDefault(); e.stopPropagation();
+  try { await navigator.clipboard.writeText(EMAIL); e.target.textContent = "Copied"; }
+  catch { e.target.textContent = "Select above"; }
+  setTimeout(() => e.target.textContent = "Copy", 1800);
+ });
+ $("yr").textContent = new Date().getFullYear();
+
+ // smooth scroll for in-page buttons
+ document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener("click", e => {
+  const t = document.querySelector(a.getAttribute("href")); if (!t) return;
+  e.preventDefault();
+  t.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+ }));
+}
+</script>
+</body>
+</html>
